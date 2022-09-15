@@ -1,0 +1,101 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: white;
+  font-size: calc(10px + 2vmin);
+  text-align: center;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradientBG 15s ease infinite;
+}
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.formCard {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+.formCard input{
+  background-color: transparent;
+  border: 1px solid rgba(255,255,255,.6);
+  background-color: rgba(255,255,255,.1);
+  outline: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px;
+  color: white;
+  /* soft shadow */
+  box-shadow: 0 0 5px rgba(0,0,0,.2);
+}
+
+.formCard button {
+  width: 300px;
+  background-color: transparent;
+  border: 1px solid rgba(255,255,255,.6);
+  background-color: rgba(255,255,255,.5);
+  outline: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px;
+  color: white;
+  box-shadow: 0 0 5px rgba(0,0,0,.2);
+}
+.formCard button:hover {
+  background-color: rgba(255,255,255,.6);
+}
+
+.userDetailCard{
+  display: flex;
+  margin: 10px;
+  margin-top: 30px;
+  padding: 1rem;
+  background: rgba( 255, 255, 255, 0.2 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 20px );
+  -webkit-backdrop-filter: blur( 20px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.userDetailBody {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.userDetailBody p {
+  margin: 0;
+  text-align: left;
+}
+.userDetailBody .name {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.userDetailBody .follow {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+.userDetailBody .profDetail{
+  margin-top: 12px;
+}
+
+.userImage img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,.6);
+  background-color: rgba(255,255,255,.5);
+  box-shadow: 0 0 5px rgba(0,0,0,.2);
+}
