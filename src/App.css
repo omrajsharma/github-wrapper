@@ -27,6 +27,7 @@
   display: flex;
   flex-direction: column;
   width: 80%;
+  align-items: center;
 }
 .formCard input{
   background-color: transparent;
@@ -39,6 +40,7 @@
   color: white;
   /* soft shadow */
   box-shadow: 0 0 5px rgba(0,0,0,.2);
+  min-width: 500px;
 }
 
 .formCard button {
