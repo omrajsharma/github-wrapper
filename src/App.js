@@ -35,6 +35,7 @@ function App() {
   return (
     <>
       <div className='container'>
+        <h1>Github Wrapper</h1>
         <form onSubmit={handleSubmit} className='formCard'>
           <input type="text" onChange={handleUsernameInput} value={username}/>
           <button>Submit</button>
